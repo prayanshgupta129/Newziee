@@ -1,0 +1,155 @@
+
+:root {
+    --primary-text-color:#933c09;
+    --secondary-text-color:#f8b994;
+    --asset-color:#cbecf0;
+    --asset-color-dark:#02dcf9;
+}
+body{
+    font-family:"Poppins","Ubuntu";
+    color:var(--primary-text-color);
+}
+ul{
+    list-style: none;
+}
+.flex{
+    display:flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow:hidden;
+}
+nav{
+    background-color: var(--asset-color);
+    position:fixed;
+    box-shadow:0px 0px 5px #84fbed;
+    z-index:99;
+    top:0;
+    left:0;
+    right:0;
+
+}
+.main-nav{
+ justify-content: space-between;
+ padding-block:8px;
+ 
+}
+.company-logo img{
+    width:80px;
+}
+.hover-links ul{
+    gap:20px;
+}
+.nav-items{
+    border:none;
+    transition: all ease-out 5s;
+}
+.nav-items:hover {
+    color:#562204;
+    cursor:pointer;
+    border-bottom: 2px solid #562204;
+    
+
+}
+/* .nav-items:active {
+    color:rgb(255, 8, 8);
+    border-bottom: 2px solid rgb(255, 8, 8);
+    
+
+} */
+.search-bar{
+    gap:30px;
+    height:32px;
+}
+.find{
+    width:100%;
+    height:40px;
+    padding-inline: 10px;
+    border:1.5px solid #933c09;
+    border-radius: 5px;
+    color:#933c09;
+    font-family:"Poppins","Ubuntu" ;
+}
+#btn{
+    width:90px;
+    height:40px;
+    background-color: #933c09;
+    border-radius:9px;
+    color:#f6fafa;
+    border:none;
+    padding: 8px 20px;
+    font-family:"Poppins","Ubuntu" ;
+    cursor:pointer;
+}
+.find:hover{
+    border: 2px solid #562204;
+
+}
+.find:active{
+    border: 2px solid #562204;
+}
+#btn:hover{
+    background-color: #562204;
+}
+.card{
+    background-color:#fcfcfc;
+   
+    color:#964f28;
+    /* padding: 10px; */
+    border-radius:5px;
+    width:360px;
+    min-height:400px;
+    box-shadow:0px 0px 5px #f8f3f1;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.card:hover{
+    /* border:2px solid #fdb994; */
+    background-color: #f6fafa;
+    transform:translateY(-2px);
+    box-shadow:1px 1px 8px #cbecf0;
+
+}
+main{
+    padding-block:20px;
+    margin-top:100px;
+}
+.cards-container{
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:start;
+    row-gap: 20px;
+    
+    
+}
+.image-container img{
+    width:100%;
+    height:180px;
+    object-fit: cover;
+
+}
+.card-content{
+    padding:12px;
+}
+.active{
+    color:#111;
+    border-bottom: 1px solid #111;
+}
+footer{
+    display:flex
+}
+.end{
+
+    background-color: #333;
+    color:#f8f3f1;
+    text-align: center;
+    height:100px;
+    width:1700px;
+    justify-items: center;
+}

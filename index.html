@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newziee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+<div class="main-nav container flex ">
+        <a href="#" onclick="reload()" class="company-logo">
+            <img src="newziee4.png" alt="newziee logo">
+        </a>
+    
+      <div class="hover-links flex">
+        <ul class="flex">
+            <li class="nav-items" id="election" onclick="onNavClick('election')">Election</li>
+            <li class="nav-items" id="sports" onclick="onNavClick('sports')">Sports</li>
+            <li class="nav-items" id="stock-market" onclick="onNavClick('stock-market')">Stock Market</li>
+        </ul>
+      </div>
+      <div class="search-bar flex">
+        <input type="search" class="find" id="find" placeholder="e.g. Cricket">
+        <button id="btn">Search</button>
+      </div>
+</div>
+    </nav>
+    <main>
+      <div class="cards-container container flex" id="card-container">
+       </div>
+</main>
+<template id="template-cards">  
+  <div class="card" >
+    <div class="image-container">
+    <img  id="newsimage" src="https://via.placeholder.com/400x200" alt="news-image"></div>
+  <div class="card-content">
+    <h1 id="newstitle">This is the title of the card </h1>
+    <h6 id="newssource">Forbes 31/12/2023</h6>
+    <p class="p.desc" id="newsdesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque incidunt corporis sequi, tempora fugiat vitae a recusandae labore repellat dolor.</p>
+  </div>
+</div></template>
+    <script src="script.js"></script>
+    <footer>
+      <div class="end">
+        <h4>Designed By : Prayansh Gupta 
+          <br>
+          ©️All the rights are reserved
+        </h4>
+      </div>
+    </footer>
+</body>
+</html>
